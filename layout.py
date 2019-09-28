@@ -5,8 +5,6 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 # --- Module Imports ---
-import resources
-import layout
 
 # --- Layout ---
 html_obj = html.Div([
@@ -35,7 +33,7 @@ html_obj = html.Div([
             )], href='https://coloradomigrahack.school.blog'),
 
         html.H4(
-            'A decision support tool for renewable energy planning for utilities.',
+            "How increased access to drivers licenses under SB13-251 has improved the lives of Colorado's undocumented population.",
             style={'font-family': 'Helvetica',
                 'position':'left',
                 'width':'100%'},
