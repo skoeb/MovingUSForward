@@ -134,7 +134,7 @@ html_obj = html.Div([
         #     ),
         # ]),
     # -------------------------------------------------------
-    # ---------------------- Section 2 ----------------------
+    # ---------------------- Section racial profiling ----------------------
     # -------------------------------------------------------
     # Spacer
     html.Div([
@@ -150,20 +150,16 @@ html_obj = html.Div([
         html.Div([
             dcc.Markdown("""
 
-                    Undocumented immigrants were especially vulnerable to the effects of racial profiling. 
+                    Is racial profiling present in our society? That is a question we asked 13 DU students. Most of them holding white identities. All of the students told us they believe that it is prevalent, 
+                    however they have never thought about it. 
 
-                    “[A traffic stop] perhaps meant getting a $150 ticket or going to court where unfortunately in some cases you would find immigration right outside,” 
-                    said Jeanette Vizguerra, an activist who is currently seeking sanctuary in the First Unitarian Society of Denver Church to avoid being deported. 
+                    When we asked the students if they ever feared the reason of them being pulled over was because of the color of their skin, they all answered with “no” and “I’ve never thought about that, but no.” 
+                    (Click the DU icon on the interactive map for a video of students’ responses).
 
-                    In 2013, Colorado approved SB-251 or the Colorado Road and Community Safety Act, to increase access to driver’s licenses. By August of 2014, 
-                    five Department of Motor Vehicle offices were implementing the program and offering 31 appointments per day, according to the I Drive Colorado campaign. 
-                    The legislature later cut the program’s budget and the number of DMV offices participating in the program dropped to three.
+                    After analyzing the data, we found that the four most white and the four most hispanic neighborhoods in Denver experience high disparity among police stops. 
+                    The majority hispanic neighborhoods experience stops up to 4x the amount of their population, whereas the number of most white neighborhood stops 
+                    reflect about half of the size of their population.
 
-                    Starting Jan. 1, 2019, The Eligibility Colorado Road And Community Safety Act extended the program by accepting Social Security Numbers to obtain 
-                    the SB-251 driver’s licenses and by allowing SB-251 driver’s license renewal online.
-
-                    Since its start, the SB-251 program has provided driver’s licenses, instruction permits, and identification cards to nearly 45,000 immigrants in Colorado.
-                    
                     """.replace('  ', ''),
                     className='eight columns offset-by-two'
             ),
@@ -267,5 +263,41 @@ html_obj = html.Div([
         className = 'twelve columns',
         style={'margin-top':20},
     ),
+    # -------------------------------------------------------
+    # ---------------------- Section pris 2nd part ----------------------
+    # -------------------------------------------------------
+    # Spacer
+    html.Div([
+        html.Img(
+            src='assets/spacer.png',
+            className='twelve columns')
+        ],
+        className = 'twelve columns',
+        style={'marginLeft':'auto','marginRight':'auto'}
+    ),
+    html.Div([    
+        # Text
+        html.Div([
+            dcc.Markdown("""
+
+                    Undocumented immigrants were especially vulnerable to the effects of racial profiling. 
+
+                    “[A traffic stop] perhaps meant getting a $150 ticket or going to court where unfortunately in some cases you would find immigration right outside,” 
+                    said Jeanette Vizguerra, an activist who is currently seeking sanctuary in the First Unitarian Society of Denver Church to avoid being deported. 
+
+                    In 2013, Colorado approved SB-251 or the Colorado Road and Community Safety Act, to increase access to driver’s licenses. By August of 2014, 
+                    five Department of Motor Vehicle offices were implementing the program and offering 31 appointments per day, according to the I Drive Colorado campaign. 
+                    The legislature later cut the program’s budget and the number of DMV offices participating in the program dropped to three.
+
+                    Starting Jan. 1, 2019, The Eligibility Colorado Road And Community Safety Act extended the program by accepting Social Security Numbers to obtain 
+                    the SB-251 driver’s licenses and by allowing SB-251 driver’s license renewal online.
+
+                    Since its start, the SB-251 program has provided driver’s licenses, instruction permits, and identification cards to nearly 45,000 immigrants in Colorado.
+                    
+                    """.replace('  ', ''),
+                    className='eight columns offset-by-two'
+            ),
+        ]),
+    ]),
 ])
 
