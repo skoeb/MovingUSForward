@@ -12,17 +12,19 @@ html_obj = html.Div([
     # Title - Row
     html.Div([
         html.Div([
-            html.H1(
-                'Moving US Forward',
-                style={'font-family': 'Helvetica',
-                    "margin-top": "0",
-                    "margin-bottom": "0"},
-            ),
+            # html.H1(
+            #     'Moving US Forward',
+            #     style={'font-family': 'Helvetica',
+            #         "margin-top": "0",
+            #         "margin-bottom": "0"},
+            # ),
             html.H4(
                 "How increased access to drivers licenses under SB13-251 has improved the lives of Colorado's immigrant community.",
                 style={'font-family': 'Helvetica',
                     'position':'left',
-                    'width':'100%'},
+                    'width':'100%',
+                    'marginTop':'30%',
+                    'marginLeft':'15%'},
             )
         ],
         className='seven columns',
@@ -41,6 +43,13 @@ html_obj = html.Div([
             )], href='https://coloradomigrahack.school.blog'),
     ],
     className='row',
+    style={
+        'marginLeft':'auto',
+        'marginRight':'auto',
+        'height':'100vh',
+        'backgroundImage':'url(assets/MainLogo.png)',
+        'backgroundRepeat': 'no-repeat'
+        }
     ),
     
     # -------------------------------------------------------
@@ -54,7 +63,7 @@ html_obj = html.Div([
                 className='twelve columns')
         ],
         className = 'twelve columns',
-        style={'margin-left':'auto','margin-right':'auto'}
+        style={'marginLeft':'auto','marginRght':'auto'}
         ),
 
         # Text
@@ -80,7 +89,7 @@ html_obj = html.Div([
             className='twelve columns')
     ],
     className = 'twelve columns',
-    style={'margin-left':'auto','margin-right':'auto'}
+    style={'marginLeft':'auto','marginRight':'auto'}
     ),
 
     # -------------------------------------------------------
@@ -134,7 +143,7 @@ html_obj = html.Div([
             className='twelve columns')
         ],
         className = 'twelve columns',
-        style={'margin-left':'auto','margin-right':'auto'}
+        style={'marginLeft':'auto','marginRight':'auto'}
     ),
     html.Div([    
         # Text
@@ -180,7 +189,7 @@ html_obj = html.Div([
                 className='twelve columns',
             )],
             className='three columns',
-            style={'margin-top':0}
+            style={'marginTop':0}
         ),
 
         # Text
@@ -198,7 +207,7 @@ html_obj = html.Div([
             className='nine columns'
         )],
         className = 'twelve columns',
-        style={'margin-top':20},
+        style={'marginTop':20},
     ),
     html.Div([    
         # Text
@@ -213,7 +222,7 @@ html_obj = html.Div([
             ),
             html.H6(
                 'driver\'s license recipient',
-                style={"text-align":"right"}
+                style={"textAlign":"right"}
             )],
             className='nine columns'
         ),
