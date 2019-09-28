@@ -23,8 +23,8 @@ html_obj = html.Div([
                 style={'font-family': 'Helvetica',
                     'position':'left',
                     'width':'100%'},
-            )],
-        
+            )
+        ],
         className='seven columns',
         ),
 
@@ -57,26 +57,19 @@ html_obj = html.Div([
         style={'margin-left':'auto','margin-right':'auto'}
         ),
 
-        # Title
-        html.Div([
-            html.H3(
-                'Introduction:',
-            )],
-        className='twelve columns',
-        style={'margin-top':0}),
-
         # Text
         html.Div([
             dcc.Markdown("""
-                    The Philippines RPS is a legislative mandate requiring utilities to increase their use of renewable resources including
-                    *“biomass, waste to energy technology, wind, solar, run-of-river, impounding hydropower sources that meet internationally accepted standards, ocean, hybrid systems, 
-                    geothermal and other RE technologies that may be later identified by the DOE."* 
-                    
-                    The RPS requires all utilities to increase their utilization of renewable energy by 1% of their total energy sales (kWh) each year beginning in 2020, although this percentage can be increased in the future by the National Renewable Energy Board.
-                    For many utilities, the lower costs and higher customer satisfaction with renewables is encouraging adoption above what the RPS requires. This calculator is designed to help utilities understand when they will need to procure additional renewable capacity, and how procuring additional renewables could result in cost savings.
-                    Click through the tabs below to input data for your utility. More details about each input can be found by hovering your mouse over the circled question-mark symbols.
+                    In 1999, Colorado law changed to bar some members of the immigrant community from obtaining a driver’s license. 
+                    Then in 2006, the Colorado State General assembly approved SB90, which required police officers to report to Immigration
+                    and Customs Enforcement (ICE) anyone arrested for a criminal offense that they *“reasonably believed”* might be in the U.S. 
+                    without authorization.
+
+                    A 2012 report by the Colorado Fiscal Institute found that Colorado spent $13 million per year to implement the so-called 
+                    “Show Me Your Papers” law. The money was spent primarily on the detention of immigrants for committing traffic or other minor offenses.
+
                     """.replace('  ', ''),
-                    className='twelve columns',
+                    className='eight columns offset-by-two'
             ),
         ]),
     ]),
@@ -98,6 +91,7 @@ html_obj = html.Div([
             src="assets/denvermap.png",
             className='twelve columns',
         )   
+    ]),
         # Spacer
         # html.Div([
         #     html.Img(
@@ -130,46 +124,139 @@ html_obj = html.Div([
         #             className='twelve columns',
         #     ),
         # ]),
-    ]),
-
     # -------------------------------------------------------
     # ---------------------- Section 2 ----------------------
     # -------------------------------------------------------
-    html.Div([    
-        # Spacer
-        html.Div([
-            html.Img(
-                src='assets/spacer.png',
-                className='twelve columns')
+    # Spacer
+    html.Div([
+        html.Img(
+            src='assets/spacer.png',
+            className='twelve columns')
         ],
         className = 'twelve columns',
         style={'margin-left':'auto','margin-right':'auto'}
-        ),
-
-        # Title
-        html.Div([
-            html.H3(
-                'Section 2:',
-            )],
-        className='twelve columns',
-        style={'margin-top':0}),
-
+    ),
+    html.Div([    
         # Text
         html.Div([
             dcc.Markdown("""
-                    The Philippines RPS is a legislative mandate requiring utilities to increase their use of renewable resources including
-                    *“biomass, waste to energy technology, wind, solar, run-of-river, impounding hydropower sources that meet internationally accepted standards, ocean, hybrid systems, 
-                    geothermal and other RE technologies that may be later identified by the DOE."* 
+
+                    Undocumented immigrants were especially vulnerable to the effects of racial profiling. 
+
+                    “[A traffic stop] perhaps meant getting a $150 ticket or going to court where unfortunately in some cases you would find immigration right outside,” 
+                    said Jeanette Vizguerra, an activist who is currently seeking sanctuary in the First Unitarian Society of Denver Church to avoid being deported. 
+
+                    In 2013, Colorado approved SB-251 or the Colorado Road and Community Safety Act, to increase access to driver’s licenses. By August of 2014, 
+                    five Department of Motor Vehicle offices were implementing the program and offering 31 appointments per day, according to the I Drive Colorado campaign. 
+                    The legislature later cut the program’s budget and the number of DMV offices participating in the program dropped to three.
+
+                    Starting Jan. 1, 2019, The Eligibility Colorado Road And Community Safety Act extended the program by accepting Social Security Numbers to obtain 
+                    the SB-251 driver’s licenses and by allowing SB-251 driver’s license renewal online.
+
+                    Since its start, the SB-251 program has provided driver’s licenses, instruction permits, and identification cards to nearly 45,000 immigrants in Colorado.
                     
-                    The RPS requires all utilities to increase their utilization of renewable energy by 1% of their total energy sales (kWh) each year beginning in 2020, although this percentage can be increased in the future by the National Renewable Energy Board.
-                    For many utilities, the lower costs and higher customer satisfaction with renewables is encouraging adoption above what the RPS requires. This calculator is designed to help utilities understand when they will need to procure additional renewable capacity, and how procuring additional renewables could result in cost savings.
-                    Click through the tabs below to input data for your utility. More details about each input can be found by hovering your mouse over the circled question-mark symbols.
                     """.replace('  ', ''),
-                    className='twelve columns',
+                    className='eight columns offset-by-two'
             ),
         ]),
     ]),
+    # -------------------------------------------------------
+    # ---------------------- Section 3 ----------------------
+    # -------------------------------------------------------
+    # Spacer
+    html.Div([
+        html.Img(
+            src='assets/spacer.png',
+            className='twelve columns')
+        ],
+        className = 'twelve columns',
+        style={'margin-left':'auto','margin-right':'auto'}
+    ),
+    html.Div([    
+        # Photo
+        html.Div([
+            html.Img(
+                src="assets/janet.JPG",
+                className='twelve columns',
+            )],
+            className='three columns',
+            style={'margin-top':0}
+        ),
 
+        # Text
+        html.Div([
+            html.H3(
+                '"Having a license does help you emotionally. I feel safer. And my children feel safer; they’re no longer scared."',
+                style={"font-style":"italic"}
+            ),
+            html.H6(
+                '-Jeanette Vizguerra,',
+            ),
+            html.H6(
+                'driver\'s license recipient',
+            )],
+            className='nine columns'
+        )],
+        className = 'twelve columns',
+        style={'margin-top':20},
+    ),
+    html.Div([    
+        # Text
+        html.Div([
+            html.H3(
+                '“I was involved in two car accidents that weren’t my fault. Luckily I had my license both times. I don’t want to even think about what would’ve happened if I didn’t have it.”',
+                style={"font-style":"italic","text-align":"right"}
+            ),
+            html.H6(
+                '-Pilar Carrillo,',
+                style={"text-align":"right"}
+            ),
+            html.H6(
+                'driver\'s license recipient',
+                style={"text-align":"right"}
+            )],
+            className='nine columns'
+        ),
+        # Photo
+        html.Div([
+            html.Img(
+                src="assets/pilar1.jpg",
+                className='twelve columns',
+            )],
+            className='three columns',
+            style={'margin-top':0}
+        )],
+        className = 'twelve columns',
+        style={'margin-top':20},
+    ),
+    html.Div([    
+        # Photo
+        html.Div([
+            html.Img(
+                src="assets/janet.JPG",
+                className='twelve columns',
+            )],
+            className='three columns',
+            style={'margin-top':0}
+        ),
 
+        # Text
+        html.Div([
+            html.H3(
+                '"Many people have told me that now that they have a driver\'s license they have been able to buy a car, \
+                take their children to the park; they no longer have to take them to school by foot under really cold weather conditions."',
+                style={"font-style":"italic"}
+            ),
+            html.H6(
+                '-José Ortiz,',
+            ),
+            html.H6(
+                'activist',
+            )],
+            className='nine columns'
+        )],
+        className = 'twelve columns',
+        style={'margin-top':20},
+    ),
 ])
 
