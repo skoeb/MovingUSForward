@@ -12,19 +12,24 @@ html_obj = html.Div([
     # Title - Row
     html.Div([
         html.Div([
-            # html.H1(
-            #     'Moving US Forward',
-            #     style={'font-family': 'Helvetica',
-            #         "margin-top": "0",
-            #         "margin-bottom": "0"},
-            # ),
+            html.H1(
+                'moving US forward',
+                style={'font-family': 'Helvetica',
+                    "margin-top": "0",
+                    "margin-bottom": "0",
+                    'fontWeight':'700',
+                    'fontSize':'105px',
+                    'width':'60%',
+                    'marginLeft':'15%'},
+            ),
             html.H4(
                 "How increased access to drivers licenses under SB13-251 has improved the lives of Colorado's immigrant community.",
                 style={'font-family': 'Helvetica',
                     'position':'left',
                     'width':'100%',
-                    'marginTop':'30%',
-                    'marginLeft':'15%'},
+                    # 'marginTop':'30%',
+                    'marginLeft':'15%'
+                },
             )
         ],
         className='seven columns',
@@ -40,15 +45,23 @@ html_obj = html.Div([
                     'testAlign':'center',
                     'float':'right',
                     },
-            )], href='https://coloradomigrahack.school.blog'),
+            )], href='https://coloradomigrahack.school.blog'
+        ),
+        html.Div([
+            html.Img(
+                src='assets/MainLogo_NoWords.png',
+                className='twelve columns')],
+            className = 'twelve columns',
+            style={'marginLeft':'auto','marginRght':'auto'}
+        ),
     ],
+ 
     className='row',
     style={
         'marginLeft':'auto',
         'marginRight':'auto',
         'height':'100vh',
-        'backgroundImage':'url(assets/MainLogo.png)',
-        'backgroundRepeat': 'no-repeat'
+        # 'backgroundColor':'#D3C9BD'
         }
     ),
     
@@ -103,42 +116,8 @@ html_obj = html.Div([
         html.Iframe(src="https://docs.google.com/presentation/d/e/2PACX-1vS2Ds7ZaV9USOQlklmCMLy2lzg6JPTaGfoiU_bruDkWzbg9XEepAEWEz8bYPhtgD5O_NFVQUKaoinZK/embed?start=false&loop=false&delayms=3000", style=dict(border=0), width="100%", height="800")
         # html.Iframe("""<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS2Ds7ZaV9USOQlklmCMLy2lzg6JPTaGfoiU_bruDkWzbg9XEepAEWEz8bYPhtgD5O_NFVQUKaoinZK/embed?start=false&loop=false&delayms=3000" frameborder="0" width="auto" height="800" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>""")
     ]),
-        # Spacer
-        # html.Div([
-        #     html.Img(
-        #         src='assets/spacer.png',
-        #         className='twelve columns')
-        # ],
-        # className = 'twelve columns',
-        # style={'margin-left':'auto','margin-right':'auto'}
-        # ),
 
-        # # Title
-        # html.Div([
-        #     html.H3(
-        #         'Section 1:',
-        #     )],
-        # className='twelve columns',
-        # style={'margin-top':0}),
 
-        # # Text
-        # html.Div([
-        #     dcc.Markdown("""
-        #             The Philippines RPS is a legislative mandate requiring utilities to increase their use of renewable resources including
-        #             *“biomass, waste to energy technology, wind, solar, run-of-river, impounding hydropower sources that meet internationally accepted standards, ocean, hybrid systems, 
-        #             geothermal and other RE technologies that may be later identified by the DOE."* 
-                    
-        #             The RPS requires all utilities to increase their utilization of renewable energy by 1% of their total energy sales (kWh) each year beginning in 2020, although this percentage can be increased in the future by the National Renewable Energy Board.
-        #             For many utilities, the lower costs and higher customer satisfaction with renewables is encouraging adoption above what the RPS requires. This calculator is designed to help utilities understand when they will need to procure additional renewable capacity, and how procuring additional renewables could result in cost savings.
-        #             Click through the tabs below to input data for your utility. More details about each input can be found by hovering your mouse over the circled question-mark symbols.
-        #             """.replace('  ', ''),
-        #             className='twelve columns',
-        #     ),
-        # ]),
-    # -------------------------------------------------------
-    # ---------------------- Section racial profiling ----------------------
-    # -------------------------------------------------------
-    # Spacer
     html.Div([
         html.Img(
             src='assets/spacer.png',
@@ -166,6 +145,12 @@ html_obj = html.Div([
                     className='eight columns offset-by-two'
             ),
         ]),
+
+        html.Div([
+            html.Img(src='assets/neighborhood_percents.png'),
+        ],
+        className='eight columns offset-by-two',
+        ),
     ]),
     # -------------------------------------------------------
     # ---------------------- Section 3 ----------------------
