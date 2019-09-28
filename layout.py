@@ -14,7 +14,7 @@ html_obj = html.Div([
         html.Div([
             html.H1(
                 'Moving US Forward',
-                style={'font-family': 'Helvetica',
+                style={'fontFamily': 'Helvetica',
                     "margin-top": "0",
                     "margin-bottom": "0"},
             ),
@@ -41,6 +41,10 @@ html_obj = html.Div([
             )], href='https://coloradomigrahack.school.blog'),
     ],
     className='row',
+    style={
+        'background-color':'red',
+        'height': '100vh',
+    }
     ),
     
     # -------------------------------------------------------
@@ -92,31 +96,35 @@ html_obj = html.Div([
                 className='twelve columns')
         ],
         className = 'twelve columns',
-        style={'margin-left':'auto','margin-right':'auto'}
+        style={'margin-left':'auto','margin-right':'auto',}
         ),
 
         # Title
-        html.Div([
-            html.H3(
-                'Section 1:',
-            )],
-        className='twelve columns',
-        style={'margin-top':0}),
+        # html.Div([
+        #     html.H3(
+        #         'Section 1:',
+        #     )],
+        # className='twelve columns',
+        # style={'margin-top':0}),
 
-        # Text
-        html.Div([
-            dcc.Markdown("""
-                    The Philippines RPS is a legislative mandate requiring utilities to increase their use of renewable resources including
-                    *“biomass, waste to energy technology, wind, solar, run-of-river, impounding hydropower sources that meet internationally accepted standards, ocean, hybrid systems, 
-                    geothermal and other RE technologies that may be later identified by the DOE."* 
+        # # Text
+        # html.Div([
+        #     dcc.Markdown("""
+        #             The Philippines RPS is a legislative mandate requiring utilities to increase their use of renewable resources including
+        #             *“biomass, waste to energy technology, wind, solar, run-of-river, impounding hydropower sources that meet internationally accepted standards, ocean, hybrid systems, 
+        #             geothermal and other RE technologies that may be later identified by the DOE."* 
                     
-                    The RPS requires all utilities to increase their utilization of renewable energy by 1% of their total energy sales (kWh) each year beginning in 2020, although this percentage can be increased in the future by the National Renewable Energy Board.
-                    For many utilities, the lower costs and higher customer satisfaction with renewables is encouraging adoption above what the RPS requires. This calculator is designed to help utilities understand when they will need to procure additional renewable capacity, and how procuring additional renewables could result in cost savings.
-                    Click through the tabs below to input data for your utility. More details about each input can be found by hovering your mouse over the circled question-mark symbols.
-                    """.replace('  ', ''),
-                    className='twelve columns',
-            ),
-        ]),
+        #             The RPS requires all utilities to increase their utilization of renewable energy by 1% of their total energy sales (kWh) each year beginning in 2020, although this percentage can be increased in the future by the National Renewable Energy Board.
+        #             For many utilities, the lower costs and higher customer satisfaction with renewables is encouraging adoption above what the RPS requires. This calculator is designed to help utilities understand when they will need to procure additional renewable capacity, and how procuring additional renewables could result in cost savings.
+        #             Click through the tabs below to input data for your utility. More details about each input can be found by hovering your mouse over the circled question-mark symbols.
+        #             """.replace('  ', ''),
+        #             className='twelve columns',
+        #     ),
+        # ]),
+        html.Img(
+            src="assets/denvermap.png",
+            className="twelve columns"
+        )
     ]),
 
     # -------------------------------------------------------
