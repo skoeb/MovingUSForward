@@ -233,7 +233,7 @@ html_obj = html.Div([
         # Photo
         html.Div([
             html.Img(
-                src="assets/janet.JPG",
+                src="assets/jose.jpg",
                 className='twelve columns',
             )],
             className='three columns',
