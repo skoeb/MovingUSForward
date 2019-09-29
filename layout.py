@@ -97,9 +97,9 @@ html_obj = html.Div([
     ]),
     # Spacer
     html.Div([
-        html.Img(
-            src='assets/spacer.png',
-            className='twelve columns')
+        html.H5(
+            'Click icons on map to view details...'
+        )
     ],
     className = 'twelve columns',
     style={'marginLeft':'auto','marginRight':'auto'}
@@ -108,13 +108,8 @@ html_obj = html.Div([
     # -------------------------------------------------------
     # -------------------- Section 1 ------------------------
     # -------------------------------------------------------
-    html.Div([ 
-        # html.Img(
-        #     src="assets/denvermap.png",
-        #     className='twelve columns',
-        # )   
+    html.Div([  
         html.Iframe(src="https://docs.google.com/presentation/d/e/2PACX-1vS2Ds7ZaV9USOQlklmCMLy2lzg6JPTaGfoiU_bruDkWzbg9XEepAEWEz8bYPhtgD5O_NFVQUKaoinZK/embed?start=false&loop=false&delayms=3000", style=dict(border=0), width="100%", height="800")
-        # html.Iframe("""<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS2Ds7ZaV9USOQlklmCMLy2lzg6JPTaGfoiU_bruDkWzbg9XEepAEWEz8bYPhtgD5O_NFVQUKaoinZK/embed?start=false&loop=false&delayms=3000" frameborder="0" width="auto" height="800" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>""")
     ]),
 
 
